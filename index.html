@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+<link rel="stylesheet" href="_css/form.css"/>
+<meta charset ="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script language="javascript"src="_javascript/funcoes.js"></script>
+<script language="javascript"src="_javascript/alterasolado.js"></script>
+<body>
+
+    <div id ="interface">
+        <section id="interacao">
+        <img id = "principalforro" src= "_imagens\forro/forroAzul.png"/>
+        <img id = "principalvelcro"src= "_imagens\velcro/velcroAzul.png"/>
+        <img id = "principalsolado"src= "_imagens\solado.png"/>
+        </section>
+
+         <aside id="formulario">
+        <form id="dados" class="formulario">
+        <fieldset id="informacao">
+            <legend id="usuario">Personalização de Órtese</legend>
+
+            <p><label id="titulo">Nome:</label><br/><input type="text" name="cnome" id="cnome" class="select" size="32" maxlength="40" placeholder="Nome do Paciente"/></p>
+
+            <p><label id="titulo">Forro:</label><br/>
+                <select onchange="alteraImagem()" name="cforro" id="cforro" class="select" >
+                <option selected disabled>-Selecione uma cor-</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Azul Claro">Azul Claro</option>
+                <option value="Azul Escuro">Azul Escuro</option>
+                <option value="Rosa Claro">Rosa Claro</option>
+                <option value="Rosa Pink">Rosa Pink</option>
+                <option value="Vermelho">Vermelho</option>
+                <option value="Verde">Verde</option></select></p>
+
+                <p><label id="titulo">Velcro:</label><br/>
+                    <select onchange="alteraImagem()" name="cvelcro" id="cvelcro" class="select">
+                    <option selected disabled>-Selecione uma cor-</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Azul Claro">Azul Claro</option>
+                    <option value="Rosa Claro">Rosa Claro</option>
+                    <option value="Rosa Pink">Rosa Pink</option>
+                    <option value="Vermelho">Vermelho</option>
+                    <option value="Verde">Verde</option></select></p>
+
+                    <p><label id="titulo">Adesivo:</label><br/>
+                    <input type="text" id="cade1" class="select" size="10" maxlength="30" placeholder="-Adesivo-"/></p>
+                    <input type="text" id="cade2" class="select" size="10" maxlength="30" placeholder="-Adesivo-" /></p>
+
+                <fieldset id="solado"><legend>Solado</legend>
+
+                    <input type="radio" name="tsol" id="ccsol"  value="Com Solado"checked>
+                    <label for="ccsol" id="sol">Com Solado<label>
+
+                    <input type="radio" name="tsol" id="cssol" onclick="alterarSolado()" value="Sem Solado">
+                    <label for="cssol" id="sol">Sem Solado<label>
+
+
+                    </fieldset>
+
+                        <p><label id="titulo">Observação:</label>
+                            <textarea name="tmgs" id="cmsg" cols="35" rows="3" placeholder="Observação:" ></textarea>
+                            </p>
+                        <button id="submit" type="submit" class="boton"><i class="fab fa-whatsapp"></i>Enviar Formulário</button>
+            </fieldset>
+        </form>
+    </div>
+
+<script src="_javascript/enviodeformulario.js"></script>
+<script src="_javascript/testemobile.js"></script>
+</aside>
+</body>
+</html>

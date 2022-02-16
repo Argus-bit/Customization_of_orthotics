@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face
+{
+	font-family: 'fonte1';
+	src: url("../_fonts/InstructionBold.ttf");
+
+}
+@font-face
+{
+	font-family: 'fonte';
+	src: url("../_fonts/MulticolorePro.otf");
+}
+body {background-color: rgb(183,204,224); }
+
+/*Interface Principal*/
+div#interface
+{
+	position: relative;
+	display: block;
+	float: center;
+	width: 1070px;
+}
+
+/*Lado de Interação do Objeto*/
+section#interacao
+{
+	display: block;
+	float: left;
+	width: 970px;
+	height: 664px;
+	margin: -7px 15px -7px -7px;
+	background: url("../_imagens/Fundo.png");
+}
+/*AQUI AQUI*/
+section#interacao img#principalvelcro
+{
+position: absolute;
+right: 110px;
+top: auto;
+}
+section#interacao img#principalsolado
+{
+position: absolute;
+right: 110px;
+top: auto;
+}
+/*Lado direito da página o Furmulário*/
+aside#formulario
+{
+	position: absolute 0px 120px;
+	display: block;
+	float: left;
+	width: 105px;
+	margin: -8px;
+	
+}
+/*Formulário*/
+form#dados
+{
+	float: center;
+	position: absolute;
+	display: block;
+	padding: 0px 10px 0px 0px;
+	width: auto;
+	height: auto;
+	background-color: rgb(49,179,160);
+	box-shadow: 0px 2px 6px 3px black;
+}
+
+fieldset#informacao
+{
+	border: none;
+	width: 338px;
+	height: 647px;
+	padding-top: 0px;
+}
+.select
+{
+padding: 0px 8px;
+border-radius: 5px;
+margin-top: 6px;
+}
+input, textarea
+{
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+	background-color: rgba (255,255,255,.8);
+}
+/*TEXTO Personalização de Órtese*/
+legend#usuario
+{
+	text-decoration: underline;
+    font-family: 'fonte1', sans-serif;
+	font-size: 18pt;
+	font-weight: bold;
+	padding: 10px 10px 10px 20px;
+}
+form#dados label#titulo, legend
+{
+
+ font-family: 'fonte', sans-serif;
+ font-size: 14pt;
+ padding: 0px 0px 0px 0px;
+ color: rgb(24,30,66);
+}
+select#cforro, #cvelcro
+{
+	font-size: 14pt;
+	padding-right: 143px;
+	display:block;
+	text-align: center;
+}
+input#cade1
+{
+
+	font-size: 14pt;
+	display:block;
+	float: left;
+	padding-right:0px ;
+	text-align: center;
+}
+input#cade2
+{
+	font-size: 14pt;
+	display:block;
+	float: right;
+	padding: -30px;
+	margin-top: -10px;
+	text-align: center;
+}
+input#ccsol
+{
+	margin-left: 10px;
+}
+label#sol
+{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 14pt;
+ font-weight: bold;
+ color: rgb(24,30,66);
+}
+fieldset#solado
+{
+	margin-top: 50px;
+}
+.boton{
+	display: block;
+	position: absolute;
+	float: right;
+	right: 20px;
+	top: 580px;
+	width: 350px;
+	height: 50px;
+	background-color:rgb(24,30,66);
+	border: solid 2px #48bb78;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 18px;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+}
